@@ -22,11 +22,11 @@ const Tutorial = () => {
           Tutorial
         </h1>
         <p 
-          className="flex flex-wrap mt-4 md:mt-6" 
+          className="flex-wrap mt-4 md:mt-6" 
           style={{ color: '#E2E8F0' }}
         >
           <h1 className='font-bold text-xl mt-5 ' style={{color:'#A4B5FC'}}>Step 1: Obtain an API Key </h1>
-<p className='text-l'>Generate an API key using the button in the Authentication section above.</p>
+<p className='items-start'>Generate an API key using the button in the Authentication section above.</p>
 <h1 className='font-bold text-xl mt-5' style={{color:'#A4B5FC'}}>Step 2: Make a Request </h1>
 <p className='text-l'>Use your preferred programming language or tool to make a POST request to the /api/generate-book endpoint. Include your API key in the header and the required parameters in the request body.</p>
 <h1 className='font-bold text-xl mt-5' style={{color:'#A4B5FC'}}>Step 3: Handle the Response </h1>

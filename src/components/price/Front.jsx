@@ -2,7 +2,7 @@ import React from 'react';
 import Endpoints from './Endpoints.jsx';
 import Tutorial from './Tutorial.jsx';
 import ApiPricing from './ApiPricing.jsx';
-import Codeexamples from './codeexamples.jsx';
+import Codeexamples from './Codeexamples.jsx';
 
 const Front = () => {
   return (

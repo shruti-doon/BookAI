@@ -15,7 +15,7 @@ const Codeexamples = () => {
         }}
       >
                 <h2
-                    className="mt-8 text-blue-400 text-xl md:text-xl font-semibold text-center"
+                    className="mt-8 text-blue-400 text-3xl md:text-xl font-semibold text-start"
                     style={{ color: '#A4B5FC' }}
                 >
                     Code Examples
