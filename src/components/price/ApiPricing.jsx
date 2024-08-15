@@ -1,27 +1,24 @@
 import React from 'react';
 
-const ApiPricing = () => {
+const ApiPricing = ({ val }) => {
   return (
-    <div id="apipricing" className='flex justify-center'>
+    <div id="api pricing" className='flex justify-center'>
       <div
-        className="text-white h-auto w-11/12 mt-8 md:w-10/12 mlg:w-9/12 xl:w-9/12 rounded-lg px-4 py-6 md:px-8 md:py-6"
+        className={`text-${val ? 'gray-300' : 'black'} h-auto w-11/12 mt-8 md:w-10/12 lg:w-9/12 xl:w-9/12 rounded-lg px-4 py-6 md:px-8 md:py-6 ${val ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-300'}`}
         style={{ 
-          backgroundColor: '#1E293B', 
           boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', 
-          border: '1px solid #334155',
-        
+          border: '1px solid'
         }}
       >
         <h2 
-          className="mt-11 text-blue-400 text-xl md:text-2xl font-semibold" 
-          style={{ color:'#A4B5FC' }}
+          className={`mt-11 text-xl md:text-2xl font-semibold ${val ? 'text-blue-300' : 'text-blue-600'}`}
         >
           API Pricing
         </h2>
-        <p >Our API pricing is based on the model used and the number of tokens processed. Here's a breakdown of the costs:</p>
-        <div className="overflow-hidden rounded-lg border border-[#334155] mt-4">
+        <p>Our API pricing is based on the model used and the number of tokens processed. Here's a breakdown of the costs:</p>
+        <div className={`overflow-hidden rounded-lg border ${val ? 'border-gray-700' : 'border-gray-300'} mt-4`}>
           <table className="w-full border-collapse">
-            <thead style={{ backgroundColor:'#6366F1' }}>
+            <thead className={val ? 'bg-gray-700' : 'bg-blue-600'}>
               <tr>
                 <th className="p-2 text-center" style={{ borderBottom: '1px solid #334155', borderTopLeftRadius: '8px' }}>API</th>
                 <th className="p-2 text-center" style={{ borderBottom: '1px solid #334155' }}>Model</th>
@@ -53,15 +50,13 @@ const ApiPricing = () => {
           </table>
         </div>
         <h2 
-          className="mt-11 text-blue-400 text-xl md:text-2xl font-semibold" 
-          style={{ color:'#A4B5FC' }}
+          className={`mt-11 text-xl md:text-2xl font-semibold ${val ? 'text-blue-300' : 'text-blue-600'}`}
         >
           Token Estimation
         </h2>
         <p>On average, 1 token is approximately 4 characters or 0.75 words. For precise pricing, we recommend using our token calculator tool.</p>
         <h2 
-          className="mt-11 text-blue-400 text-xl md:text-2xl font-semibold" 
-          style={{ color:'#A4B5FC' }}
+          className={`mt-11 text-xl md:text-2xl font-semibold ${val ? 'text-blue-300' : 'text-blue-600'}`}
         >
           Billing
         </h2>
