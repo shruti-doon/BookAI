@@ -8,7 +8,7 @@ const Tutorial = () => {
       style={{ backgroundColor: '#0F172A' }}
     > 
       <div
-        className="space-y-3 h-auto w-11/12 mt-8 md:w-10/12 mlg:w-9/12 xl:w-7/12 rounded-lg px-4 py-6 md:px-8 md:py-6"
+        className="space-y-3 h-auto w-11/12 mt-8 md:w-10/12 mlg:w-9/12 xl:w-9/12 rounded-lg px-4 py-6 md:px-8 md:py-6"
         style={{ 
           backgroundColor: '#1E293B', 
           boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', 

@@ -9,7 +9,7 @@ const Front = () => {
     <div className="space-y-8 min-h-screen w-full flex flex-col items-center justify-center bg-[#0F172A]">
       <div
         id="overview"
-        className="mt-8 w-full md:w-10/12 lg:w-9/12 xl:w-7/12 p-6 md:p-8 bg-[#1E293B] rounded-lg shadow-md border border-[#334155] space-y-6"
+        className="mt-8 w-11/12 md:w-10/12 lg:w-9/12 xl:w-9/12 p-6 md:p-8 bg-[#1E293B] rounded-lg shadow-md border border-[#334155] space-y-6"
       >
         <h1 className=" text-xl md:text-2xl font-semibold text-[#A4B5FC]">
           Overview
@@ -24,7 +24,7 @@ const Front = () => {
       
       <div
         id="auth"
-        className="w-full md:w-10/12 lg:w-9/12 xl:w-7/12 p-6 md:p-8 bg-[#1E293B] rounded-lg shadow-md border border-[#334155] space-y-6"
+        className=" w-11/12 md:w-10/12 lg:w-9/12 xl:w-9/12 p-6 md:p-8 bg-[#1E293B] rounded-lg shadow-md border border-[#334155] space-y-6"
       >
         <h1 className="text-xl md:text-2xl font-semibold text-[#A4B5FC]">
           Authentication
